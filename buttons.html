@@ -15,6 +15,7 @@
     .subscribe-button:hover {
         /* pseudo-class */
         opacity: 0.8;
+        /* makes lighter */
     }
 
     .subscribe-button:active {
@@ -32,7 +33,7 @@
         border-style: solid;
         cursor: pointer;
         border-width: 1px;
-        transition: background-color 1s, color 1s;
+        transition: background-color 0.15s, color 0.15s;
     }
 
     .join-button:hover {
@@ -57,6 +58,11 @@
         margin-left: 10px;
         font-weight: bold;
         font-size: 15px;
+        transition: box-shadow 0.15s;
+    }
+
+    .tweet-button:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
     }
 </style>
 
