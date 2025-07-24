@@ -3,7 +3,15 @@
 
 <head>
     <title>Youtube.com Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <style>
+        p {
+            font-family: Roboto, Arial;
+        }
+
         .search-bar {
             display: block;
         }
@@ -32,13 +40,17 @@
         }
 
         .profile-picture {
-            width: 100%;
-            display: inline-block;
+            width: 40px;
+            border-radius: 50px;
         }
 
         .vid-info {
             width: 200px;
             display: inline-block;
+        }
+
+        .thumbnail-row {
+            margin-bottom: 10px;
         }
     </style>
 </head>
@@ -47,7 +59,7 @@
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="vid-preview">
-        <div> <!-- first vertical layout -->
+        <div class="thumbnail-row"> <!-- first vertical layout -->
             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
         </div>
         <div> <!-- second vertical layout -->
