@@ -38,20 +38,14 @@
             margin-bottom: 12px;
         }
 
-        .channel-picture {
-            display: inline-block;
-            width: 50px;
-            vertical-align: top;
+        .vid-info-grid {
+            display: grid;
+            grid-template-columns: 50px 1fr;
         }
 
         .profile-picture {
             width: 40px;
             border-radius: 50px;
-        }
-
-        .vid-info {
-            width: 200px;
-            display: inline-block;
         }
 
         .thumbnail-row {
@@ -78,7 +72,7 @@
         <div class="thumbnail-row"> <!-- first vertical layout -->
             <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
         </div>
-        <div> <!-- second vertical layout -->
+        <div class="vid-info-grid"> <!-- second vertical layout -->
             <div class="channel-picture"> <!-- first horizontal layout -->
                 <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
             </div>
@@ -100,7 +94,7 @@
         <div class="thumbnail-row"> <!-- first vertical layout -->
             <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
         </div>
-        <div> <!-- second vertical layout -->
+        <div class="vid-info-grid"> <!-- second vertical layout -->
             <div class="channel-picture"> <!-- first horizontal layout -->
                 <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
             </div>
