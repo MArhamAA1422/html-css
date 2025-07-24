@@ -4,21 +4,41 @@
 <head>
     <title>Youtube.com Clone</title>
     <style>
-        .thumbnail {
-            width: 300px;
-            object-fit: contain;
-            object-position: center;
-        }
-
         .search-bar {
             display: block;
+        }
+
+        .thumbnail {
+            width: 100%;
+            object-fit: contain;
+            object-position: center;
         }
 
         .vid-preview {
             display: inline-block;
             vertical-align: top;
             width: 300px;
-            margin-right: 15px;
+            margin-right: 5px;
+        }
+
+        .vid-title {
+            margin-top: 0px;
+        }
+
+        .channel-picture {
+            display: inline-block;
+            width: 50px;
+            vertical-align: top;
+        }
+
+        .profile-picture {
+            width: 100%;
+            display: inline-block;
+        }
+
+        .vid-info {
+            width: 200px;
+            display: inline-block;
         }
     </style>
 </head>
@@ -27,16 +47,25 @@
     <input class="search-bar" type="text" placeholder="Search">
 
     <div class="vid-preview">
-        <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
-        <p class="vid-title">
-            Talking Tech and AI with Google CEO!
-        </p>
-        <p class="vid-author">
-            Marques Brownlee
-        </p>
-        <p class="vid-stats">
-            3.4M views &#183; 6 months ago
-        </p>
+        <div> <!-- first vertical layout -->
+            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+        </div>
+        <div> <!-- second vertical layout -->
+            <div class="channel-picture"> <!-- first horizontal layout -->
+                <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+            </div>
+            <div class="vid-info"> <!-- second horizontal layout -->
+                <p class="vid-title">
+                    Talking Tech and AI with Google CEO!
+                </p>
+                <p class="vid-author">
+                    Marques Brownlee
+                </p>
+                <p class="vid-stats">
+                    3.4M views &#183; 6 months ago
+                </p>
+            </div>
+        </div>
     </div>
 
     <div class="vid-preview">
