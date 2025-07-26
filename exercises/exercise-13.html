@@ -1,130 +1,133 @@
-<!DOCTYPE html>
-
 <html>
 
 <head>
-    <title> Exercise 13 </title>
     <style>
-        p {
+        div {
             font-family: Arial;
-            margin-top: 0;
-            margin-bottom: 0;
         }
 
-        .inbox {
-            margin-left: 50px;
-            margin-top: 50px;
-            height: 400px;
-            width: 500px;
-            border-color: gray;
-            border-radius: 3px;
-            border-width: 1px;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        .heading {
-            font-size: 12px;
-            color: gray;
-            margin-left: 10px;
+        .container {
             padding-top: 10px;
-            margin-bottom: 25px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 400px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-left: 20px;
         }
 
-        .section {
+        .inbox-label {
+            font-size: 14px;
+            color: rgb(120, 120, 120);
+            margin-bottom: 20px;
+        }
+
+        .email {
             display: flex;
             flex-direction: row;
             align-items: center;
-            height: 100px;
-            margin-left: 10px;
+            margin-bottom: 20px;
         }
 
-        .picture {
+        .sender-picture-container {
+            margin-right: 10px;
+        }
+
+        .sender-picture {
             width: 50px;
             height: 50px;
             object-fit: cover;
             border-radius: 25px;
-            margin-right: 10px;
         }
 
-        .info {
+        .email-content {
             flex: 1;
         }
 
-        .title,
-        .description {
+        .email-header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 3px;
+        }
+
+        .sender-name {
+            font-size: 18px;
             font-weight: bold;
-            font-size: 16px;
-            margin-bottom: 7px;
         }
 
-        .details {
+        .send-time {
             font-size: 14px;
-            color: gray;
+            color: rgb(120, 120, 120);
         }
 
-        .time {
-            font-size: 14px;
-            color: gray;
-            padding-right: 30px;
+        .subject {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .message {
+            color: rgb(120, 120, 120);
         }
     </style>
 </head>
 
-<body style="margin-bottom: 500px;">
-    <div class="inbox">
-        <p class="heading">
-            ALL INBOXES
-        </p>
-        <div class="section">
-            <img class="picture" src="cat.jpg">
-            <div class="info">
-                <p class="title">
-                    Chewy Promotions
-                </p>
-                <p class="description">
+<body>
+    <div class="container">
+        <div class="inbox-label">ALL INBOXES</div>
+        <div class="email">
+            <div class="sender-picture-container">
+                <img class="sender-picture" src="cat.jpg">
+            </div>
+            <div class="email-content">
+                <div class="email-header">
+                    <div class="sender-name">Chewy Promotions</div>
+                    <div class="send-time">4:58 PM</div>
+                </div>
+                <div class="subject">
                     Biggest sales of the year!
-                </p>
-                <p class="details">
+                </div>
+                <div class="message">
                     Hey there! We're writing to tell you about our...
-                </p>
+                </div>
             </div>
-            <p class="time">
-                4:58 PM
-            </p>
         </div>
-        <div class="section">
-            <img class="picture" src="dog.jpg">
-            <div class="info">
-                <p class="title">
-                    Best Buy
-                </p>
-                <p class="description">
+        <div class="email">
+            <div class="sender-picture-container">
+                <img class="sender-picture" src="dog.jpg">
+            </div>
+            <div class="email-content">
+                <div class="email-header">
+                    <div class="sender-name">Best Buy</div>
+                    <div class="send-time">12:32 PM</div>
+                </div>
+                <div class="subject">
                     Your Best Buy eReceipt
-                </p>
-                <p class="details">
+                </div>
+                <div class="message">
                     Thank you for shopping at Best Buy, here is...
-                </p>
+                </div>
             </div>
-            <p class="time">
-                12:32 PM
-            </p>
         </div>
-        <div class="section">
-            <img class="picture" src="cat.jpg">
-            <div class="info">
-                <p class="title">
-                    Netflix
-                </p>
-                <p class="description">
-                    Here's what's coming soon to Netflix
-                </p>
-                <p class="details">
-                    Brand new movies and shows, old favorites...
-                </p>
+        <div class="email">
+            <div class="sender-picture-container">
+                <img class="sender-picture" src="cat.jpg">
             </div>
-            <p class="time">
-                9:00 AM
-            </p>
+            <div class="email-content">
+                <div class="email-header">
+                    <div class="sender-name">Netflix</div>
+                    <div class="send-time">9:00 AM</div>
+                </div>
+                <div class="subject">
+                    Here's what's coming soon to Netflix
+                </div>
+                <div class="message">
+                    Brand new movies and shows, old favorites...
+                </div>
+            </div>
         </div>
     </div>
 </body>
