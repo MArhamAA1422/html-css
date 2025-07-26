@@ -8,6 +8,16 @@
 .left-section {
     background-color: lightblue;
     width: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-menu {
+    height: 20px;
+}
+
+.youtube-logo {
+    height: 20px;
 }
 
 .middle-section {
