@@ -1,3 +1,20 @@
-.search-bar {
-    display: block;
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 55px;
+}
+
+.left-section {
+    background-color: lightblue;
+    width: 150px;
+}
+
+.middle-section {
+    background-color: lightpink;
+    flex: 1;
+}
+
+.right-section {
+    background-color: lightblue;
+    width: 200px;
 }
