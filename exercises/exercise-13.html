@@ -5,12 +5,128 @@
 <head>
     <title> Exercise 13 </title>
     <style>
+        p {
+            font-family: Arial;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
 
+        .inbox {
+            margin-left: 50px;
+            margin-top: 50px;
+            height: 400px;
+            width: 500px;
+            border-color: gray;
+            border-radius: 3px;
+            border-width: 1px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .heading {
+            font-size: 12px;
+            color: gray;
+            margin-left: 10px;
+            padding-top: 10px;
+            margin-bottom: 25px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100px;
+            margin-left: 10px;
+        }
+
+        .picture {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 25px;
+            margin-right: 10px;
+        }
+
+        .info {
+            flex: 1;
+        }
+
+        .title,
+        .description {
+            font-weight: bold;
+            font-size: 16px;
+            margin-bottom: 7px;
+        }
+
+        .details {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .time {
+            font-size: 14px;
+            color: gray;
+            padding-right: 30px;
+        }
     </style>
 </head>
 
 <body style="margin-bottom: 500px;">
-
+    <div class="inbox">
+        <p class="heading">
+            ALL INBOXES
+        </p>
+        <div class="section">
+            <img class="picture" src="cat.jpg">
+            <div class="info">
+                <p class="title">
+                    Chewy Promotions
+                </p>
+                <p class="description">
+                    Biggest sales of the year!
+                </p>
+                <p class="details">
+                    Hey there! We're writing to tell you about our...
+                </p>
+            </div>
+            <p class="time">
+                4:58 PM
+            </p>
+        </div>
+        <div class="section">
+            <img class="picture" src="dog.jpg">
+            <div class="info">
+                <p class="title">
+                    Best Buy
+                </p>
+                <p class="description">
+                    Your Best Buy eReceipt
+                </p>
+                <p class="details">
+                    Thank you for shopping at Best Buy, here is...
+                </p>
+            </div>
+            <p class="time">
+                12:32 PM
+            </p>
+        </div>
+        <div class="section">
+            <img class="picture" src="cat.jpg">
+            <div class="info">
+                <p class="title">
+                    Netflix
+                </p>
+                <p class="description">
+                    Here's what's coming soon to Netflix
+                </p>
+                <p class="details">
+                    Brand new movies and shows, old favorites...
+                </p>
+            </div>
+            <p class="time">
+                9:00 AM
+            </p>
+        </div>
+    </div>
 </body>
 
 </html>
