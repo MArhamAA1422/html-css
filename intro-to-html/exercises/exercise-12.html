@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Exercise 12
+    </title>
+    <style>
+        p {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .oliver-pic-section,
+        .bob-pic-section,
+        .rex-pic-section {
+            width: 60px;
+            margin-right: 10px;
+        }
+
+        .oliver-pic,
+        .bob-pic,
+        .rex-pic {
+            width: 100%;
+            height: 60px;
+            border-radius: 35px;
+            object-fit: cover;
+        }
+
+        .oliver-info,
+        .bob-info,
+        .rex-info {
+            width: 150px;
+        }
+
+        .oliver-name,
+        .bob-name,
+        .rex-name {
+            font-weight: bold;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .oliver-desc,
+        .bob-desc,
+        .rex-desc {
+            font-size: 14px;
+            color: rgb(100, 100, 100);
+            margin-bottom: 3px;
+        }
+
+        .oliver-popularity,
+        .bob-popularity,
+        .rex-popularity {
+            font-size: 14px;
+            color: rgb(100, 100, 100);
+        }
+
+        .oliver-follow-button,
+        .bob-follow-button,
+        .rex-follow-button {
+            background-color: rgb(29, 155, 240);
+            color: white;
+            cursor: pointer;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="oliver-pic-section">
+            <img class="oliver-pic" src="cat.jpg">
+        </div>
+        <div class="oliver-info">
+            <p class="oliver-name">Oliver</p>
+            <p class="oliver-desc">the cat</p>
+            <p class="oliver-popularity">Popular</p>
+        </div>
+        <div>
+            <button class="oliver-follow-button">Follow</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="bob-pic-section">
+            <img class="bob-pic" src="dog.jpg">
+        </div>
+        <div class="bob-info">
+            <p class="bob-name">Bob</p>
+            <p class="bob-desc">the dog</p>
+            <p class="bob-popularity">Popular</p>
+        </div>
+        <div>
+            <button class="bob-follow-button">Follow</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="rex-pic-section">
+            <img class="rex-pic" src="cat.jpg">
+        </div>
+        <div class="rex-info">
+            <p class="rex-name">Rex</p>
+            <p class="rex-desc">the cat</p>
+            <p class="rex-popularity">Popular</p>
+        </div>
+        <div>
+            <button class="rex-follow-button">Follow</button>
+        </div>
+    </div>
+</body>
+
+</html>
