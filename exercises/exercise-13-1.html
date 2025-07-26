@@ -1,0 +1,134 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        p {
+            font-family: Arial;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+
+        .left {
+            width: 100px;
+        }
+
+        .cat-pic {
+            width: 70px;
+            height: 70px;
+            object-fit: cover;
+            border-radius: 35px;
+            margin-left: 15px;
+        }
+
+        .right {
+            flex: 1;
+        }
+
+        .heading {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .ch-name {
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .ch-id {
+            color: gray;
+            font-size: 18px;
+        }
+
+        .text {
+            font-size: 20px;
+            width: 400px;
+            margin-bottom: 8px;
+        }
+
+        .video {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            border-width: 1px;
+            width: 400px;
+            height: 100px;
+            border-color: gray;
+            border-radius: 25px;
+            box-shadow: 0 0px 3px rgba(0, 0, 0, 0.25);
+        }
+
+        .gray-box {
+            background-color: rgb(157, 157, 157);
+            flex: 1;
+            height: 100%;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+
+        .white-box {
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            margin-left: 8px;
+        }
+
+        .youtube {
+            color: gray;
+            font-size: 20px;
+            margin-bottom: 8px;
+        }
+
+        .vid-title {
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <img class="cat-pic" src="cat.jpg">
+        </div>
+        <div class="right">
+            <div class="heading">
+                <div class="ch-name">
+                    supersimple.dev
+                </div>
+                <div class="ch-id">
+                    @SuperSimpleDev
+                </div>
+            </div>
+            <div class="text">
+                What is backend web development? A complete overview. New video is up!
+            </div>
+            <div class="video">
+                <!-- <div class="box"> -->
+                <div class="gray-box"></div>
+                <div class="white-box">
+                    <div class="youtube">
+                        youtube.com
+                    </div>
+                    <div class="vid-title">
+                        Backend web development - a complete overview (2021)
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
