@@ -19,6 +19,19 @@
             left: 0;
             bottom: 0;
             background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            /*vertical*/
+            align-items: center;
+            /*horizontal*/
+            justify-content: center;
+        }
+
+        .modal {
+            background-color: white;
+            border: none;
+            border-radius: 15px;
+            width: 500px;
+            height: 150px;
         }
     </style>
 </head>
@@ -27,7 +40,19 @@
     <div class="right-sidebar">
         right sidebar
     </div>
-    <div class="overlay"></div>
+    <div class="overlay">
+        <div class="modal">
+            <div class="title">
+                Modal Title
+            </div>
+            <div class="description">
+                This is a modal
+            </div>
+            <button class="close-bth">
+                Close
+            </button>
+        </div>
+    </div>
 </body>
 
 </html>
