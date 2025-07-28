@@ -21,6 +21,14 @@
     .vid-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+    .vid-title {
+        font-size: 100px;
+        line-height: 24px;
+    }
+    .video-author,
+    .video-stats {
+        font-size: 1000px;
+    }
 }
 
 .thumbnail {
