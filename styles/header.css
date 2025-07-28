@@ -85,6 +85,7 @@
     bottom: -30px;
     opacity: 0;
     transition: opacity 0.15s;
+    pointer-events: none;
 }
 
 .search-button:hover .tooltip {
