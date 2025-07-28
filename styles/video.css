@@ -17,6 +17,11 @@
     margin-bottom: 10px;
 }
 
+.video-title-link {
+    text-decoration: none;
+    color: black;
+}
+
 .vid-info-grid {
     display: grid;
     grid-template-columns: 50px 1fr;
