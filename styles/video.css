@@ -11,6 +11,12 @@
     }
 }
 
+@media (min-width: 751px) and (max-width: 999px) {
+    .vid-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 @media (min-width: 1000px) {
     .vid-grid {
         grid-template-columns: 1fr 1fr 1fr 1fr;
