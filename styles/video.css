@@ -11,6 +11,12 @@
     }
 }
 
+@media (min-width: 1000px) {
+    .vid-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
 .thumbnail {
     width: 100%;
     object-fit: contain;
