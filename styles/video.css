@@ -45,6 +45,7 @@
 
 .channel-picture {
     position: relative;
+    height: 20px;
 }
 
 .channel-tooltip {
