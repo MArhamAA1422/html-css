@@ -4,22 +4,24 @@
     <style>
         .item-pic {
             /* background-color: rgb(167, 166, 166); */
-            height: 300px;
-            width: 300px;
+            /* height: 300px;
+            width: 300px; */
             margin-left: 100px;
             margin-top: 100px;
             position: relative;
+            display: inline-block;
         }
 
         .full-sleeve-shirt {
             height: 200px;
             width: 200px;
+            object-fit: cover;
         }
 
         .discount {
             position: absolute;
             top: 8px;
-            right: 60px;
+            right: 0;
             color: white;
             background-color: black;
             padding-top: 5px;
@@ -32,22 +34,25 @@
 
         .blur-container {
             position: absolute;
-            bottom: 100px;
+            bottom: 0;
+            left: 0;
+            right: 0;
             display: flex;
             justify-content: center;
-            width: 200px;
-            height: 60px;
+            height: 80px;
             align-items: center;
-            background-color: rgba(0, 0, 0, 0.05);
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
         .add-to-cart {
             background-color: white;
-            font-size: 12px;
-            padding-top: 5px;
-            padding-right: 8px;
-            padding-left: 8px;
-            padding-bottom: 5px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: black;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
             cursor: pointer;
         }
     </style>
