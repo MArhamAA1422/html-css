@@ -88,6 +88,7 @@
     opacity: 0;
     transition: opacity 0.15s;
     pointer-events: none;
+    white-space: nowrap;
 }
 
 .search-button:hover .tooltip, .voice-search-button:hover .tooltip {
