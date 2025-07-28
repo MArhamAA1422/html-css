@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <style>
+        .item-pic {
+            /* background-color: rgb(167, 166, 166); */
+            height: 300px;
+            width: 300px;
+            margin-left: 100px;
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .full-sleeve-shirt {
+            height: 200px;
+            width: 200px;
+        }
+
+        .discount {
+            position: absolute;
+            top: 8px;
+            right: 60px;
+            color: white;
+            background-color: black;
+            padding-top: 5px;
+            padding-right: 8px;
+            padding-left: 8px;
+            padding-bottom: 5px;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .blur-container {
+            position: absolute;
+            bottom: 100px;
+            display: flex;
+            justify-content: center;
+            width: 200px;
+            height: 60px;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.05);
+        }
+
+        .add-to-cart {
+            background-color: white;
+            font-size: 12px;
+            padding-top: 5px;
+            padding-right: 8px;
+            padding-left: 8px;
+            padding-bottom: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="padding-bottom: 1000px">
+    <div class="item-pic">
+        <img class="full-sleeve-shirt" src="full-sleeve-shirt.webp">
+        <div class="discount">20% OFF</div>
+        <div class="blur-container">
+            <button class="add-to-cart">
+                Add to Cart
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
