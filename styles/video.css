@@ -44,6 +44,9 @@
 }
 
 .vid-time {
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    font-weight: 500;
     background-color: black;
     color: white;
     position: absolute;
