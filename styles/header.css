@@ -116,8 +116,8 @@
 
 .notifications-count {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -2px;
+    right: -5px;
     background-color: rgb(200, 0, 0);
     color: white;
     font-family: Roboto, Arial;
