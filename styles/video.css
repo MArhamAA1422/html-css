@@ -5,6 +5,12 @@
     row-gap: 40px;
 }
 
+@media (max-width: 750px) {
+    .vid-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
 .thumbnail {
     width: 100%;
     object-fit: contain;
